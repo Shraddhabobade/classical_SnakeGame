@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background-color: rgb(255, 255, 156);
+    height: 90vh;
+    width: 50vw;
+
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}   
+
+
+.head{
+    background-color:green;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+.body{
+    background-color: lightgreen;
+    border: 2px solid transparent;
+    border-radius: 13px;
+}
+.food{
+    background-color: red ;
+    border: 1px solid black;
+    border-radius: 23px;
+}
+
+#score{
+    padding: 33px;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    right: 0;
+}
+#highscoreBox{
+    padding: 33px;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    left: 0;
+}
